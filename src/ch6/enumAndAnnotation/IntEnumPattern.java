@@ -14,7 +14,7 @@ public interface IntEnumPattern {
     public static final String BANANA_MORADO = "0";
     public static final String BANANA_TINDOK = "1 "; // 오타
 
-    public enum Apple { FUJI, PIPPIN, GRANNY_SMITH }
-    public enum Orange { NAVEL, TEMPLE, BLOOD }
+
+
 }
 
