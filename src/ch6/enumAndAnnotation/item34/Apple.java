@@ -1,4 +1,4 @@
-package ch6.enumAndAnnotation;
+package ch6.enumAndAnnotation.item34;
 
 public enum Apple {
     FUJI, PIPPIN, GRANNY_SMITH;

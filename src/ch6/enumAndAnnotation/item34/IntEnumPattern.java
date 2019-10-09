@@ -1,4 +1,6 @@
-package ch6.enumAndAnnotation;
+package ch6.enumAndAnnotation.item34;
+
+import ch6.enumAndAnnotation.AntiPattern;
 
 @AntiPattern
 public interface IntEnumPattern {

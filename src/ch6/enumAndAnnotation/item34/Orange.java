@@ -1,4 +1,4 @@
-package ch6.enumAndAnnotation;
+package ch6.enumAndAnnotation.item34;
 
 public enum Orange {
 
