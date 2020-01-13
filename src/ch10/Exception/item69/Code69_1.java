@@ -55,19 +55,16 @@ public class Code69_1 {
         }
 
         //TODO : 4. Optional 반환
-        final List<Mountain> mountains = Arrays.stream(Mountain.values()).collect(Collectors.toList());
-        for(int i=0; i<6; i++) {
-            Optional<Mountain> m = getAsOptional(mountains, i);
-            m.ifPresent(Mountain::climb);
-        }
+        Arrays.stream(Mountain.values()).map(Code69_1::getAsOptional).forEach(t -> t.ifPresent(Mountain::climb));
         System.out.println("i'm on top!!!!!!!!");
     }
 
-    public static <T> Optional<T> getAsOptional(List<T> list, int index) {
+    public static <T> Optional<T> getAsOptional(T obj) {
         try {
-            return Optional.of(list.get(index));
+            return Optional.of(obj);
         } catch (IndexOutOfBoundsException e) {
             return Optional.empty();
         }
     }
+
 }
